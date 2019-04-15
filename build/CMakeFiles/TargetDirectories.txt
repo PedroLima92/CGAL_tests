@@ -16,6 +16,7 @@
 /Users/pedro/projetos/CGAL_tests/build/CMakeFiles/test.dir
 /Users/pedro/projetos/CGAL_tests/build/CMakeFiles/ExperimentalConfigure.dir
 /Users/pedro/projetos/CGAL_tests/build/CMakeFiles/NightlyCoverage.dir
+/Users/pedro/projetos/CGAL_tests/build/CMakeFiles/teste.dir
 /Users/pedro/projetos/CGAL_tests/build/CMakeFiles/NightlyTest.dir
 /Users/pedro/projetos/CGAL_tests/build/CMakeFiles/ContinuousMemCheck.dir
 /Users/pedro/projetos/CGAL_tests/build/CMakeFiles/NightlyBuild.dir

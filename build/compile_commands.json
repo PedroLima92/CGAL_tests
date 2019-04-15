@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/pedro/projetos/CGAL_tests/build",
+  "command": "/usr/bin/clang++   -isystem /usr/local/include  -g   -o CMakeFiles/teste.dir/teste.cpp.o -c /Users/pedro/projetos/CGAL_tests/teste.cpp",
+  "file": "/Users/pedro/projetos/CGAL_tests/teste.cpp"
+}
+]

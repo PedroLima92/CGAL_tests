@@ -330,6 +330,19 @@ NightlyCoverage/fast:
 .PHONY : NightlyCoverage/fast
 
 #=============================================================================
+# Target rules for targets named teste
+
+# Build rule for target.
+teste: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 teste
+.PHONY : teste
+
+# fast build rule for target.
+teste/fast:
+	$(MAKE) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/build
+.PHONY : teste/fast
+
+#=============================================================================
 # Target rules for targets named NightlyTest
 
 # Build rule for target.
@@ -485,6 +498,33 @@ Experimental/fast:
 	$(MAKE) -f CMakeFiles/Experimental.dir/build.make CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
+teste.o: teste.cpp.o
+
+.PHONY : teste.o
+
+# target to build an object file
+teste.cpp.o:
+	$(MAKE) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/teste.cpp.o
+.PHONY : teste.cpp.o
+
+teste.i: teste.cpp.i
+
+.PHONY : teste.i
+
+# target to preprocess a source file
+teste.cpp.i:
+	$(MAKE) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/teste.cpp.i
+.PHONY : teste.cpp.i
+
+teste.s: teste.cpp.s
+
+.PHONY : teste.s
+
+# target to generate assembly for a file
+teste.cpp.s:
+	$(MAKE) -f CMakeFiles/teste.dir/build.make CMakeFiles/teste.dir/teste.cpp.s
+.PHONY : teste.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -509,6 +549,7 @@ help:
 	@echo "... test"
 	@echo "... ExperimentalConfigure"
 	@echo "... NightlyCoverage"
+	@echo "... teste"
 	@echo "... NightlyTest"
 	@echo "... ContinuousMemCheck"
 	@echo "... NightlyBuild"
@@ -522,6 +563,9 @@ help:
 	@echo "... ExperimentalMemCheck"
 	@echo "... Continuous"
 	@echo "... Experimental"
+	@echo "... teste.o"
+	@echo "... teste.i"
+	@echo "... teste.s"
 .PHONY : help
 
 
